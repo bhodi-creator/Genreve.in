@@ -1,0 +1,119 @@
+/* Blog Container */
+.blog-container {
+    padding: 40px 0;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for readability */
+    font-family: 'Karla', sans-serif;
+}
+
+/* Narrower container for focused reading */
+.blog-container .inner-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styling */
+.blog-header {
+    background-color: #ffffff; /* White background */
+    padding: 50px 0 30px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Slightly darker divider for contrast */
+}
+.blog-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #ff7f00; /* Orange for brand consistency */
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+.blog-subtitle {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    color: #000000; /* Black for readability */
+    line-height: 1.6;
+}
+
+/* Content Styling */
+.blog-content {
+    padding: 30px 0;
+}
+.blog-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #d90a2c; /* Red for emphasis */
+    margin: 35px 0 15px;
+    position: relative;
+}
+.blog-section-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #d90a2c;
+    bottom: -5px;
+    left: 0;
+}
+.blog-text {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    color: #000000; /* Black text */
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Custom List */
+.blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.blog-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #000000; /* Black text */
+}
+.blog-list li::before {
+    content: '•'; /* Simple bullet */
+    position: absolute;
+    left: 0;
+    color: #ff7f00; /* Orange bullet */
+    font-size: 1.2rem;
+}
+.blog-list li strong {
+    color: #d90a2c; /* Red bold text */
+    font-weight: 600;
+}
+.blog-list li em {
+    color: #555555; /* Dark gray for SEO keywords, softer than black */
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* Button Styling */
+.blog-btn {
+    display: inline-block;
+    background-color: #ff7f00; /* Orange */
+    color: #ffffff; /* White text */
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+.blog-btn:hover {
+    background-color: #e66b00; /* Slightly darker orange for hover */
+    color: #ffffff; /* White text */
+}
+.blog-btn i {
+    margin-left: 8px;
+    vertical-align: middle;
+}
